@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinare — Ervanária & Estética · Vila Nova de Famalicão desde 1984</title>
+<meta name="description" content="Clinare — Ervanária & Estética em Vila Nova de Famalicão. Aconselhamento técnico em produtos naturais, suplementação e tratamentos de estética desde 1984.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Hanken+Grotesk:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+@media print{
+  @page{ size:A4 portrait; margin:12mm; }
+  html,body{ background:#fff !important; }
+  *,*::before,*::after{
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+    animation-delay:-99s !important; animation-duration:.001s !important;
+    animation-iteration-count:1 !important; animation-fill-mode:both !important;
+    animation-play-state:running !important; transition-duration:0s !important;
+  }
+  /* show all reveal content */
+  .reveal{ opacity:1 !important; transform:none !important; }
+  /* hide interactive-only chrome */
+  .header, .mobile-panel, .fab, .nav__toggle, .lang, .hero__cta, .store__actions, #marcar-form, .nav__right{ display:none !important; }
+  .form-success{ display:block !important; }
+  /* neutralize sticky/blur */
+  .history__media{ position:static !important; }
+  /* page breaks between major sections */
+  .section, .hero{ break-inside:avoid; }
+  #pilares, #historia, #equipa, #lojas, #contactos{ break-before:page; }
+  .pillar, .store, .member, .tl{ break-inside:avoid; }
+  /* tame dark section for ink */
+  .section--deep{ background:#10301A !important; }
+  /* widen content for full page */
+  .wrap{ max-width:100% !important; }
+  /* keep hero badge from overflowing into next page */
+  .hero__badge{ position:static !important; margin-top:18px; display:inline-flex !important; }
+  .hero__grid{ gap:24px !important; }
+  body{ font-size:12pt; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="header">
+  <div class="wrap nav">
+    <a href="#inicio" class="nav__brand" aria-label="Clinare">
+      <span class="wordmark">
+        <svg class="leaf" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3c-7 0-13 3-16 9-1 2-1.5 4-1.5 6 0 0 2-5 7-7-3 3-4 6-4 9 2 0 5-1 8-4 4-4 6.5-9 6.5-13z"/></svg>
+        CLINARE<span class="reg">®</span>
+      </span>
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#pilares" data-en="What we do">O que fazemos</a></li>
+      <li><a href="#historia" data-en="Our story">História</a></li>
+      <li><a href="#equipa" data-en="Team">Equipa</a></li>
+      <li><a href="#lojas" data-en="Our stores">As lojas</a></li>
+      <li><a href="#contactos" data-en="Contact">Contactos</a></li>
+    </ul>
+
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button data-lang="pt" class="active">PT</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="#contactos" class="btn btn--primary" data-en="Book a visit">Marcar visita</a>
+      <button class="nav__toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile panel -->
+<nav class="mobile-panel" aria-label="Menu móvel">
+  <a href="#pilares" data-en="What we do">O que fazemos</a>
+  <a href="#historia" data-en="Our story">História</a>
+  <a href="#equipa" data-en="Team">Equipa</a>
+  <a href="#lojas" data-en="Our stores">As lojas</a>
+  <a href="#contactos" data-en="Contact">Contactos</a>
+  <a href="#contactos" class="btn btn--primary" data-en="Book a visit">Marcar visita</a>
+</nav>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero__grid">
+      <div class="hero__copy reveal">
+        <div class="hero__est" data-en="Herbalist &amp; Aesthetics · Vila Nova de Famalicão">Ervanária &amp; Estética · Vila Nova de Famalicão</div>
+        <h1 data-en="Natural health and<br>well-being, with <em>technical</em> guidance.">Saúde natural e bem-estar, com aconselhamento <em>técnico</em>.</h1>
+        <p class="lead hero__lead" data-en="Since 1984 we have brought together a herbalist and an aesthetics centre under one roof — natural products, supplements and treatments, recommended by professionals who know your needs.">Desde 1984 reunimos ervanária e centro de estética sob o mesmo teto — produtos naturais, suplementação e tratamentos, recomendados por quem conhece as suas necessidades.</p>
+        <div class="hero__cta">
+          <a href="#contactos" class="btn btn--primary" data-en="Book a visit">Marcar visita <span class="arr">↗</span></a>
+          <a href="#historia" class="btn btn--ghost" data-en="Our 40-year story">A nossa história de 40 anos</a>
+        </div>
+      </div>
+
+      <div class="hero__media reveal">
+        <div class="ph" aria-label="Fotografia da loja Clinare">
+          <div class="ph__inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+            <span data-en="Store photo">Foto da loja</span>
+          </div>
+        </div>
+        <div class="hero__badge">
+          <span class="yr">40</span>
+          <span class="lbl" data-en="years of natural care in Famalicão">anos a cuidar de forma natural em Famalicão</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- stat strip -->
+    <div class="stats reveal">
+      <div class="stat"><b>1984</b><span data-en="Founded by a Pharmacy Technician">Fundada por Técnico de Farmácia</span></div>
+      <div class="stat"><b>2</b><span data-en="stores in Vila Nova de Famalicão">lojas em Vila Nova de Famalicão</span></div>
+      <div class="stat"><b>2</b><span data-en="areas: herbalist + aesthetics">vertentes: ervanária + estética</span></div>
+      <div class="stat"><b>4.8★</b><span data-en="average customer rating">classificação média dos clientes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PILLARS ============================ -->
+<section class="section section--sage" id="pilares">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow center" data-en="Two areas, one home">Duas vertentes, uma casa</span>
+      <h2 data-en="Everything for your natural well-being">Tudo para o seu bem-estar natural</h2>
+      <p class="lead" style="margin-inline:auto" data-en="Clinare was born from the union of two complementary worlds. The same care guides both: listening, advising and recommending what truly fits you.">A Clinare nasce da união de dois mundos complementares. O mesmo cuidado guia ambos: ouvir, aconselhar e recomendar o que verdadeiramente lhe assenta.</p>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5-3 8-7 8-12V5l-8-3-8 3v5c0 5 3 9 8 12z"/><path d="M9 12l2 2 4-4"/></svg><span data-en="Herbalist photo">Foto ervanária</span></div></div>
+        <div class="pillar__body">
+          <span class="pillar__kicker">Ervanária</span>
+          <h3 data-en="Natural products &amp; supplementation">Produtos naturais &amp; suplementação</h3>
+          <p data-en="Herbal teas, supplements, organic and gluten-free food, sports nutrition and natural cosmetics — with technical advice rooted in our pharmacy origins.">Chás, suplementos, alimentação biológica e sem glúten, nutrição desportiva e cosmética natural — com aconselhamento técnico enraizado na nossa origem de farmácia.</p>
+          <ul>
+            <li data-en="Herbal teas">Chás &amp; infusões</li>
+            <li data-en="Supplements">Suplementos</li>
+            <li data-en="Gluten-free">Sem glúten</li>
+            <li data-en="Sports nutrition">Nutrição desportiva</li>
+            <li data-en="Cosmetics">Cosmética</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="pillar reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c3 4 5 6.5 5 9.5A5 5 0 0 1 7 12.5C7 9.5 9 7 12 3z"/><path d="M12 21v-4"/></svg><span data-en="Aesthetics photo">Foto estética</span></div></div>
+        <div class="pillar__body">
+          <span class="pillar__kicker">Estética</span>
+          <h3 data-en="Treatments &amp; recovery">Tratamentos &amp; recuperação</h3>
+          <p data-en="A dedicated aesthetics centre for face and body care, focused on healthy skin and well-being, delivered by qualified professionals.">Centro de estética dedicado ao cuidado de rosto e corpo, focado numa pele saudável e no bem-estar, por profissionais qualificados.</p>
+          <ul>
+            <li data-en="Facial care">Cuidado de rosto</li>
+            <li data-en="Body care">Cuidado de corpo</li>
+            <li data-en="Cleansing">Limpeza de pele</li>
+            <li data-en="Recovery">Recuperação</li>
+            <li data-en="Well-being">Bem-estar</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ HISTORY ============================ -->
+<section class="section" id="historia">
+  <div class="wrap">
+    <div class="history__grid">
+      <div class="history__media reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg><span data-en="Founder photo">Foto do fundador</span></div></div>
+        <div class="founder">
+          <b>Manuel da Costa Gomes</b>
+          <span data-en="Founder · Pharmacy Technician">Fundador · Técnico de Farmácia</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="section__head reveal" style="margin-bottom:40px">
+          <span class="eyebrow" data-en="Our story">A nossa história</span>
+          <h2 data-en="Four decades of natural care">Quatro décadas a cuidar de forma natural</h2>
+          <p class="lead" data-en="A family project born from knowledge and a passion for natural well-being — that grew alongside the city of Vila Nova de Famalicão.">Um projeto familiar nascido do conhecimento e da paixão pelo bem-estar natural — que cresceu a par da cidade de Vila Nova de Famalicão.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tl reveal">
+            <div class="tl__year">1984</div>
+            <h3 data-en="It all begins">Tudo começa</h3>
+            <p data-en="Manuel da Costa Gomes, a Pharmacy Technician, founds the Centro de Dietética e Ervanária — known as the “ervanária do shopping” — on the 2nd of January.">Manuel da Costa Gomes, Técnico de Farmácia, funda o Centro de Dietética e Ervanária — conhecido como a “ervanária do shopping” — a 2 de janeiro.</p>
+          </div>
+          <div class="tl reveal">
+            <div class="tl__year">2006</div>
+            <h3 data-en="Aesthetics joins in">Nasce a estética</h3>
+            <p data-en="The Clinare aesthetics centre opens and the two brands merge into one identity: Clinare — Ervanária e Estética.">Abre o Clinare Centro de Estética e as duas marcas fundem-se numa só identidade: Clinare — Ervanária e Estética.</p>
+          </div>
+          <div class="tl reveal">
+            <div class="tl__year">2014</div>
+            <h3 data-en="A second store, 30 years on">Segunda loja, aos 30 anos</h3>
+            <p data-en="To mark its 30th anniversary, Clinare opens a second store on Avenida Marechal Humberto Delgado.">A assinalar os 30 anos, a Clinare abre a segunda loja na Avenida Marechal Humberto Delgado.</p>
+          </div>
+          <div class="tl reveal">
+            <div class="tl__year">2024</div>
+            <h3 data-en="40 years &amp; online">40 anos e online</h3>
+            <p data-en="Four decades on, the online store arrives — more than a convenient way to buy supplements, a space to share news and offers.">Quatro décadas depois, surge a loja online — mais do que um local cómodo para comprar suplementos, um espaço para divulgar novidades e promoções.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TEAM ============================ -->
+<section class="section section--sage" id="equipa">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow center" data-en="Who looks after you">Quem cuida de si</span>
+      <h2 data-en="A team that knows you by name">Uma equipa que o conhece pelo nome</h2>
+      <p class="lead" style="margin-inline:auto" data-en="Proximity is our way of working. The same people, year after year, who advise with knowledge and honesty.">A proximidade é a nossa forma de trabalhar. As mesmas pessoas, ano após ano, que aconselham com conhecimento e honestidade.</p>
+    </div>
+
+    <div class="team">
+      <article class="member reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg><span data-en="Photo">Foto</span></div></div>
+        <div>
+          <div class="member__name">Manuel da Costa Gomes</div>
+          <div class="member__role" data-en="Founder · Pharmacy Technician">Fundador · Técnico de Farmácia</div>
+          <p class="member__desc" data-en="Founded Clinare in 1984 and still guides its know-how in herbalism and dietetics.">Fundou a Clinare em 1984 e mantém o saber-fazer em ervanária e dietética.</p>
+        </div>
+      </article>
+
+      <article class="member reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg><span data-en="Photo">Foto</span></div></div>
+        <div>
+          <div class="member__name">Armanda Monteiro</div>
+          <div class="member__role" data-en="Aesthetician">Esteticista</div>
+          <p class="member__desc" data-en="Leads facial and body treatments with a focus on healthy, cared-for skin.">Lidera os tratamentos de rosto e corpo, com foco numa pele saudável e cuidada.</p>
+        </div>
+      </article>
+
+      <article class="member reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg><span data-en="Photo">Foto</span></div></div>
+        <div>
+          <div class="member__name" data-en="Herbalist advisor">Aconselhamento ervanária</div>
+          <div class="member__role" data-en="Natural products &amp; supplements">Produtos naturais &amp; suplementos</div>
+          <p class="member__desc" data-en="Helps you choose teas, supplements and natural food with technical advice.">Ajuda-o a escolher chás, suplementos e alimentação natural com aconselhamento técnico.</p>
+        </div>
+      </article>
+
+      <article class="member reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg><span data-en="Photo">Foto</span></div></div>
+        <div>
+          <div class="member__name" data-en="Aesthetics team">Equipa de estética</div>
+          <div class="member__role" data-en="Treatments &amp; recovery">Tratamentos &amp; recuperação</div>
+          <p class="member__desc" data-en="Accompanies each treatment plan with attention and follow-up.">Acompanha cada plano de tratamento com atenção e seguimento.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STORES ============================ -->
+<section class="section" id="lojas">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow center" data-en="Find us">Onde estamos</span>
+      <h2 data-en="Two stores in Vila Nova de Famalicão">Duas lojas em Vila Nova de Famalicão</h2>
+    </div>
+
+    <div class="stores">
+      <!-- Shopping -->
+      <article class="store reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l1.5-5h15L21 9M4 9v11h16V9M4 9h16M9 20v-6h6v6"/></svg><span data-en="Storefront photo">Foto da montra</span></div></div>
+        <div class="store__body">
+          <div class="store__name">
+            <span class="pre" data-en="The original store">A loja original</span>
+            <h3>Clinare Shopping</h3>
+          </div>
+          <div class="store__rows">
+            <div class="srow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div><span class="k" data-en="Address">Morada</span>Rua Luís Barroso, Shopping Town, Loja R-20<br>4760-111 Vila Nova de Famalicão</div>
+            </div>
+            <div class="srow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              <div><span class="k" data-en="Phone">Telefone</span>252 312 468</div>
+            </div>
+            <div class="srow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div><span class="k" data-en="Opening hours">Horário</span><span data-en="Mon–Fri 9:30–19:00 · Sat 9:30–13:00">Seg–Sex 9:30–19:00 · Sáb 9:30–13:00</span></div>
+            </div>
+          </div>
+          <div class="store__actions">
+            <a class="btn btn--ghost" href="https://maps.google.com/?q=Clinare+Shopping+Town+Vila+Nova+de+Famalicão" target="_blank" rel="noopener" data-en="Directions">Como chegar</a>
+            <a class="btn btn--ghost" href="tel:252312468" data-en="Call">Ligar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Avenida -->
+      <article class="store reveal">
+        <div class="ph"><div class="ph__inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l1.5-5h15L21 9M4 9v11h16V9M4 9h16M9 20v-6h6v6"/></svg><span data-en="Storefront photo">Foto da montra</span></div></div>
+        <div class="store__body">
+          <div class="store__name">
+            <span class="pre" data-en="Opened in 2014">Aberta em 2014</span>
+            <h3>Clinare Avenida</h3>
+          </div>
+          <div class="store__rows">
+            <div class="srow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div><span class="k" data-en="Address">Morada</span>Av. Marechal Humberto Delgado, 202<br>4760-012 Vila Nova de Famalicão</div>
+            </div>
+            <div class="srow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              <div><span class="k" data-en="Phone">Telefone</span>252 372 940</div>
+            </div>
+            <div class="srow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div><span class="k" data-en="Opening hours">Horário</span><span data-en="Mon–Fri 9:30–19:00 · Sat 9:30–13:00">Seg–Sex 9:30–19:00 · Sáb 9:30–13:00</span></div>
+            </div>
+          </div>
+          <div class="store__actions">
+            <a class="btn btn--ghost" href="https://maps.google.com/?q=Clinare+Avenida+Humberto+Delgado+202+Vila+Nova+de+Famalicão" target="_blank" rel="noopener" data-en="Directions">Como chegar</a>
+            <a class="btn btn--ghost" href="tel:252372940" data-en="Call">Ligar</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="section section--deep" id="contactos">
+  <div class="wrap">
+    <div class="contact__grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--leaf)" data-en="Get in touch">Fale connosco</span>
+        <h2 style="margin-top:16px" data-en="Book a visit or send us a question">Marque uma visita ou envie-nos uma questão</h2>
+        <p class="lead" style="color:rgba(255,255,255,.78);margin:18px 0 36px" data-en="Tell us what you need — a treatment, advice on supplements or a product. We reply as soon as possible.">Diga-nos o que precisa — um tratamento, aconselhamento de suplementos ou um produto. Respondemos com a maior brevidade.</p>
+
+        <div class="contact__info">
+          <div class="cinfo">
+            <div class="cinfo__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div>
+              <h4 data-en="Support line">Linha de apoio</h4>
+              <p><a href="tel:252372940">252 372 940</a> · <a href="tel:252312468">252 312 468</a><br><a href="tel:+351914785548">914 785 548</a></p>
+            </div>
+          </div>
+          <div class="cinfo">
+            <div class="cinfo__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:encomendas@clinare.pt">encomendas@clinare.pt</a></p>
+            </div>
+          </div>
+          <div class="cinfo">
+            <div class="cinfo__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <div>
+              <h4 data-en="Stores">Lojas</h4>
+              <p data-en="Shopping Town, Loja R-20 · Av. M. Humberto Delgado, 202<br>Vila Nova de Famalicão">Shopping Town, Loja R-20 · Av. M. Humberto Delgado, 202<br>Vila Nova de Famalicão</p>
+            </div>
+          </div>
+          <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 8.5h2.2V5.2c-.4-.05-1.7-.2-3.2-.2-3.1 0-5.2 1.9-5.2 5.4v2.8H6.3v3.6h3v9.1h3.7v-9.1h2.9l.45-3.6H13V10.9c0-1 .3-1.7 1.8-1.7z"/></svg></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://wa.me/351914785548" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- form -->
+      <div class="reveal">
+        <div class="form-card">
+          <form id="marcar-form">
+            <h3 data-en="Request a booking">Pedir marcação</h3>
+            <p class="sub" data-en="No commitment — we’ll confirm availability with you.">Sem compromisso — confirmamos a disponibilidade consigo.</p>
+            <div class="field-row">
+              <div class="field">
+                <label data-en="Name">Nome</label>
+                <input type="text" name="nome" required data-en-ph="Your name" placeholder="O seu nome">
+              </div>
+              <div class="field">
+                <label data-en="Phone">Telefone</label>
+                <input type="tel" name="tel" required data-en-ph="Contact number" placeholder="Contacto">
+              </div>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" name="email" data-en-ph="email@example.com" placeholder="email@exemplo.pt">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label data-en="Store">Loja</label>
+                <select name="loja">
+                  <option data-en="Clinare Shopping">Clinare Shopping</option>
+                  <option data-en="Clinare Avenida">Clinare Avenida</option>
+                  <option data-en="No preference">Sem preferência</option>
+                </select>
+              </div>
+              <div class="field">
+                <label data-en="Interest">Interesse</label>
+                <select name="servico">
+                  <option data-en="Aesthetics treatment">Tratamento de estética</option>
+                  <option data-en="Supplement advice">Aconselhamento de suplementos</option>
+                  <option data-en="Natural products">Produtos naturais</option>
+                  <option data-en="Other">Outro</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label data-en="Message">Mensagem</label>
+              <textarea name="msg" data-en-ph="Tell us what you need…" placeholder="Diga-nos o que precisa…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" data-en="Send request">Enviar pedido <span class="arr">↗</span></button>
+            <p class="form-note" data-en="By sending you agree to be contacted by Clinare.">Ao enviar concorda em ser contactado pela Clinare.</p>
+          </form>
+
+          <div class="form-success">
+            <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg></div>
+            <h3 data-en="Request sent!">Pedido enviado!</h3>
+            <p data-en="Thank you. We’ll get back to you as soon as possible.">Obrigado. Entraremos em contacto com a maior brevidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="wordmark">
+          <svg class="leaf" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3c-7 0-13 3-16 9-1 2-1.5 4-1.5 6 0 0 2-5 7-7-3 3-4 6-4 9 2 0 5-1 8-4 4-4 6.5-9 6.5-13z"/></svg>
+          CLINARE<span class="reg">®</span>
+        </span>
+        <p data-en="Clinare — Clínica Natural de Recuperação e Estética, Lda. Herbalist &amp; aesthetics in Vila Nova de Famalicão since 1984.">Clinare — Clínica Natural de Recuperação e Estética, Lda. Ervanária &amp; estética em Vila Nova de Famalicão desde 1984.</p>
+      </div>
+      <div class="footer__col">
+        <h5 data-en="Explore">Explorar</h5>
+        <ul>
+          <li><a href="#pilares" data-en="What we do">O que fazemos</a></li>
+          <li><a href="#historia" data-en="Our story">História</a></li>
+          <li><a href="#equipa" data-en="Team">Equipa</a></li>
+          <li><a href="#lojas" data-en="Stores">As lojas</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 data-en="Contact">Contactos</h5>
+        <ul>
+          <li><a href="tel:252372940">252 372 940</a></li>
+          <li><a href="tel:252312468">252 312 468</a></li>
+          <li><a href="mailto:encomendas@clinare.pt">encomendas@clinare.pt</a></li>
+          <li><a href="https://wa.me/351914785548" target="_blank" rel="noopener">WhatsApp · 914 785 548</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 data-en="Stores">Lojas</h5>
+        <ul>
+          <li>Clinare Shopping<br><span style="color:var(--muted-2);font-size:.82rem">Shopping Town, Loja R-20</span></li>
+          <li>Clinare Avenida<br><span style="color:var(--muted-2);font-size:.82rem">Av. M. Humberto Delgado, 202</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-en="© 2026 Clinare. All rights reserved.">© 2026 Clinare. Todos os direitos reservados.</p>
+      <div class="legal">
+        <a href="#" data-en="Terms &amp; conditions">Termos e condições</a>
+        <a href="#" data-en="Privacy policy">Política de privacidade</a>
+        <a href="#" data-en="Cookies">Política de cookies</a>
+        <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener" data-en="Complaints book">Livro de reclamações</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a class="fab" href="https://wa.me/351914785548" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg>
+</a>
+
+<script src="app.js"></script>
+<script>
+  (function(){
+    function ready(){
+      var fonts = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+      Promise.resolve(fonts).then(function(){
+        setTimeout(function(){ window.print(); }, 500);
+      });
+    }
+    if(document.readyState === "complete"){ ready(); }
+    else{ window.addEventListener("load", ready); }
+  })();
+</script>
+</body>
+</html>
